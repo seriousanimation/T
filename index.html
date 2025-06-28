@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Panel Flow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div id="viewport">
+        <div id="world">
+
+            <svg id="connector-svg">
+                <path id="wire1" class="connector-wire" d=""></path>
+                <path id="wire2" class="connector-wire" d=""></path>
+                <path id="wire3" class="connector-wire" d=""></path>
+                <path id="wire4" class="connector-wire" d=""></path>
+                <path id="wire5" class="connector-wire" d=""></path>
+                <path id="wire6" class="connector-wire" d=""></path>
+            </svg>
+
+            <div class="topic-row" id="topic-row-1">
+                <div class="left-panels">
+                    <div class="panel video-panel">
+                        <h3>Video</h3>
+                        <div class="video-container">
+                            <video id="video-player-1" class="topic-video" src="https://raw.githubusercontent.com/seriousanimation/Star/main/assets/videos/Veo6.mp4" muted loop playsinline></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel main-panel">
+                    <h2>Introduction</h2>
+                    <p>Salient Points</p>
+                    <div class="panel-tab"></div>
+                </div>
+                <div class="right-panels">
+                    <div class="panel video-panel-2">
+                        <h3>Video</h3>
+                        <div class="video-container">
+                            <video id="video-player-2" class="topic-video" src="https://raw.githubusercontent.com/seriousanimation/Star/main/assets/videos/ASCIIMOSQUE1024.mp4" muted loop playsinline></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-row" id="topic-row-2">
+                 <div class="left-panels">
+                    <div class="panel video-panel">
+                        <h3>Video</h3>
+                        <div class="video-container">
+                            <video id="video-player-3" class="topic-video" src="https://raw.githubusercontent.com/seriousanimation/Star/main/assets/videos/Veo4.mp4" muted loop playsinline></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel main-panel">
+                    <h2>Next Topic</h2>
+                    <p>Content for the second topic goes here.</p>
+                </div>
+                <div class="right-panels">
+                    <div class="panel video-panel-2">
+                        <h3>Video</h3>
+                        <div class="video-container">
+                            <video id="video-player-4" class="topic-video" src="https://raw.githubusercontent.com/seriousanimation/Star/main/assets/videos/Veo5.mp4" muted loop playsinline></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-row" id="topic-row-3">
+                 <div class="left-panels">
+                    <div class="panel video-panel">
+                        <h3>Animation</h3>
+                        <div class="video-container">
+                            <img src="https://raw.githubusercontent.com/seriousanimation/Star/main/assets/gifs/unnamed.gif" alt="Animated GIF from repository">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel main-panel">
+                    <h2>Next Topic 2</h2>
+                    <p>Content for the third topic goes here.</p>
+                </div>
+                <div class="right-panels">
+                    <div class="panel video-panel-2">
+                        <h3>Video</h3>
+                        <div class="video-container">
+                            <video id="video-player-6" class="topic-video" src="https://raw.githubusercontent.com/seriousanimation/Star/main/assets/videos/video1.mp4" muted loop playsinline></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="generativebackground.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
